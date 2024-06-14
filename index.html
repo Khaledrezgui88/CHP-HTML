@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 </head>
+
 <body>
-   
 
- <!-- va wine mawjouda welcom  -->
- <a href="#welcome"> Let's go up Top </a>
+  <!--  Header Utilisee pour contenir des informations   placée en haut de la page ou d'une section. -->
+  <header>
+    <h1>Mon CV </h1>
+    <!--  les principale lien . -->
+    <nav>
 
-    <!-- coment insert un lien  -->
-    <a href="https://gomycode.tn/">Take me to GoMyCode's Website</a>
+      <a href="#about">About</a>
+      <a href="#Work">Work</a>
+      <a href="#Resume ">Resume</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- insertion image-->
+    <section id="about">
+      <img src="./image&video/khaled.jpg" alt="Italian Trulli">
 
+      <h2>KHALED REZGUI </h2>
+      <p>OBJECTIF
+      <p>Travailler dans un envirement qui m'encourage a reuccir et aevoluer profesionellement ou je peux ultiliser mes
+        competanceet mes connaaissance de maniere apporee</p>
+      <h2> About </h2>
+      <h1>Experience Professionelles</h1>
+      <ol type="I">
+        <li>Comercial</li>
+        <li>Comercial</li>
+        <li>Comercial</li>
+      </ol>
+    </section>
 
-<!-- this is a title -->
-<h1>Welcom 1</h1> 
-<h2>Welcom 2</h2>
-<h3>Welecom 3</h3>
-<h4>welcom 4</h4>
-<h1>Welcom 1</h1> 
-<h2>Welcom 2</h2>
-<h3>Welecom 3</h3>
-<h4>welcom 4</h4>
-<h1>Welcom 1</h1> 
-<h2>Welcom 2</h2>
-<h3>Welecom 3</h3>
-<h4>welcom 4</h4>
-<h1>Welcom 1</h1> 
-<h2>Welcom 2</h2>
-<h3>Welecom 3</h3>
-<h4>welcom 4</h4>
-<b> this is a bold</b>
+    <!-- insertion video youtube -->
+    <section id="Work">
+      <h1>Work</h1>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/zcTFG_F0FRs">
+      </iframe>
+    </section>
 
+    <!-- insertion morceau audio -->
+    <section id="Resume">
+      <h1>Resume</h1>
+      <audio controls>
+        <source src="/image&video/Sound/endoftheworld-60374.mp3" type="audio/mpeg">
+      </audio>
+    </section>
 
+    <section id="contact">
 
+      <form>
+        <div>
+          <label for="name">name : </label>
+          <!-- required = vous devez remplir le champ  ( input obligatoire) -->
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="password">password : </label>
+          <input type="password" name="password" id="password">
+        </div>
+        <div>
+          <label for="phone">PhoneNum : </label>
+          <input type="number" name="phone" id="phone">
+        </div>
+        <div>
+          <label for="email">Email : </label>
+          <input type="email" name="email" id="email">
+        </div>
 
-<!--coment insert une image-->
-<img src="./download.jpg" alt="Italian Trulli">
+        <!-- Button Radio pour les choix exclusifs (une seule option peut être sélectionnée). -->
+        <div>
+          <label for="">Gender :</label>
+          <label>
+            <input type="radio" name="gender" value="mal" checked>
+            Masculin
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female">
+            Feminin
+          </label>
+        </div>
+        <!-- Case a cocher   des choix multiples (plusieurs options peuvent être sélectionnées).-->
+        <div>
+          <label for="">Hobbies :</label>
 
+          <label>
+            <input type="checkbox" name="hobbies" value="sport">Sport
+          </label>
+          <label>
+            <input type="checkbox" name="hobbies" value="music">Musique
+          </label>
+          <label>
+            <input type="checkbox" name="hobbies" value="nothing" checked>Nothing
+          </label>
+        </div>
+        <div>
+          <!-- une sélection unique dans une liste déroulant -->
+          <label for="country"> Pays : </label>
+          <select name="country" id="country">
+            <option value="tunisia">Tunisia</option>
+            <option value="libye">Libye</option>
+            <option value="maroc">Maroc</option>
+            <option value="#" selected>Choise your country</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message: </label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="saubmit">Envoyer</button>
+      </form>
+    </section>
+  </main>
 
-<p id ="welcome">Saléééémmm</p>
-
-<!--coment insert un audio-->
-
-<!-- <audio controls>
-    <source src="./Sound/endoftheworld-60374.mp3" type="audio/mpeg">
-        Please Check the audio Extension
-</audio> -->
-
-
-<!--coment insert un video-->
-<!--<video width="320" height="240" autoplay>
-    <source src="./video/videoplayback.mp4" type="video/mp4" />
-    Please Check the video extension.
-</video>-->
-
-
-
-<!--coment insert un video ml youtube-->
-<iframe
-    width="420"
-    height="315"
-    src="https://www.youtube.com/embed/zcTFG_F0FRs"
-
-
-></iframe>
-
-
-
-
-<!--coment ajouter des ligne avec point -->
-<h1>Web Languages</h1>
-<ol type="I">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-</ol>
-
-
-<!--coment ajouter un tableau avec atribue (bordure1) -->
-<table border="1">
-    <tr>
-      <th>name</th>
-      <th>prenon</th>
-      <th>JOb</th>
-    </tr>
-    <tr>
-      <td>azyz</td>
-      <td>daraji</td>
-      <td>web developer</td>
-      <th>JOb</th>
-    </tr>
-    <tr>
-      <td>khaled</td>
-      <td>Rezgui</td>
-      <td>etudiant</td>
-    </tr>
-  </table>
-
-
-  <h1> Mon site web</h1>
-
-
+  <footer>
+    <p>&copy; 2024 Mon CV. Tous droits réservés.</p>
+  </footer>
 
 </body>
+
 </html>
