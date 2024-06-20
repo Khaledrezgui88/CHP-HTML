@@ -18,7 +18,7 @@ div {
     border-style:double; color: brown; background-color: beige;
 }
 /* appele d'une class avec modification */
-.kim {
+.containerInformation {
     border-style:dashed; color: darkblue; background-color: beige;
 }
 
