@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('path/to/Roboto-Regular.woff') format('woff'),
+         url('path/to/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+  }
+
+#about {
+    color: red;
+}
+/* un style roboto  */
+body {
+    font-family: 'roboto';
+}
+
+div {
+    border-style:double; color: brown; background-color: beige;
+}
+/* appele d'une class avec modification */
+.kim {
+    border-style:dashed; color: darkblue; background-color: beige;
+}
+
+nav {
+    display: inline;
+}
+/* comment modifier la dimension d'une image */
+img {
+    margin: 50px;margin-left: 0px;
+}
+
+/* comment suprimer la ligne de la link */
+a:link { 
+    text-decoration: none; 
+  } 
