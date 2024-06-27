@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPoint Tailwind </title>
+    <!-- link to import tailwind framework -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- link to import fontawesom framework for import icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    .image {
+        height: 200px;
+    }
+</style>
+
+<body>
+    <!-- create header section -->
+    <header class="bg-gray-800 text-white flex  flex-row justify-between p-4">
+        <h1 class="text-xl">Khaled Rezgui</h1>
+        <nav>
+            <!-- space-x-4  pour asssurer l'espacement a gauche et droit de chaque lien -->
+            <ul class="flex flex-row justify-between space-x-4">
+                <li><a href="#home" class="hover:underLine">Home</a></li>
+                <li><a href="#projects" class="hover:underLine">Projects</a></li>
+                <li><a href="#contact" class="hover:underLine">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Create Hero Section  -->
+    <section class="bg-cover bg-center h-screen  flex items-center justify-center  image mt-5 p-4"
+        style="background-image: url('./image/fond\ blue.jpg');">
+        <h2 class="text-white text-3xl">Welcome to my portfolio web site.<h2>
+    </section>
+
+    <!-- Create Skills Section -->
+    <section class="p-4">
+        <h3 class="text-2xl mb-4"> My Skills</h3>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-gray-300 rounded">HTML </div>
+            <div class="p-4 bg-gray-300 rounded">CSS</div>
+            <div class="p-4 bg-gray-300 rounded">JAVA SCRIPT</div>
+            <div class="p-4 bg-gray-300 rounded">Tailwind CSS</div>
+        </div>
+    </section>
+
+    <!-- Create Projects Section -->
+    <section class="p-4" id="projects">
+        <h3 class="text-2xl mb-4"> Boostrap Projects</h3>
+        <div class="grid grid-cols-1">
+            <div class="bg-white p-4 rounded shadow">
+                <img src="./image/projet1.jpg.png" alt="project"
+                    class="w-full h-48 object-cover rounded">
+                <h4 class="text-xl mt-2"> Web Site Restaurant</h4>
+                <p> You never get a second chance to make a first impression. Now more than ever, it happens on your restaurant's website. </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <img src="./image/projet2.png" alt="project"
+                    class="w-full h-48 object-cover rounded">
+                <h4 class="text-xl mt-2"> website outlet sneakers </h4>
+                <p> Shoe Outlet aims to be your one-stop footwear paradise. With one of the largest selections of children’s shoes in the city, it’s easy to have your family put their best foot forward. With a wide selection of functional and trendy shoes at reasonable prices, you’re sure to find what you’re looking for.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Create Contact Form -->
+    <section class="p-4" id="contact">
+        <h3 class="text-2xl mb-4"> Contact</h3>
+        <form class="flex flex-col space-y-4">
+            <input type="text" name="name" id="name" placeholder="Name" class="p-2 border rounded">
+            <input type="email" name="email" id="email" placeholder="Email" class="p-2 border rounded">
+            <textarea name="message" id="message" placeholder="Message" class="p-2 border rounded"></textarea>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded  w-40 self-end"> Send</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 flex flex-row justify-between items-center">
+        <p>&copy; 2024 Portfolio Khaled. All rights reserved.</p>
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+        </div>
+    </footer>
+
+</body>
+</body>
+
+</html>
